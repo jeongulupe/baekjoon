@@ -6,11 +6,6 @@ int max(int a, int b){
     else return b;
 }
 
-int min(int a, int b){
-	if(a >= b) return b;
-    else return a;
-}
-
 int main(){
     char a[90]={0}, b[90] = {0}, binary_number1[90]={0}, binary_number2[90]={0}, binary_number[90]={0};
     int n, len1, len2, sum, next = 0;
