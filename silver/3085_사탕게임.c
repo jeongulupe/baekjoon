@@ -87,3 +87,28 @@ int search(){
     }
     return max;
 }
+
+int factorial_iterative(int n){
+    int sum = 1;
+
+    for(int i=1; i<=n; i++){
+        sum *= i;
+    }
+
+    return sum;
+}
+
+int Fibonacci_iterative(int n){
+    int num[100] = { 0 };
+
+    num[0] = 0;
+    num[1] = 1;
+
+
+    for(int i = 2; i<=n; i++){
+        num[i] = num[i-1] + num[i-2];
+    }
+
+    return num[n];
+
+}
