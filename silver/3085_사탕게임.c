@@ -91,11 +91,18 @@ int search(){
 int factorial_iterative(int n){
     int sum = 1;
 
+    if(n <= 1) return 1;
+
     for(int i=1; i<=n; i++){
         sum *= i;
     }
-
     return sum;
+}
+
+int factorial_recursive(int n){
+    if(n == 0) return 1;
+    
+    return factorial_recursive(n-1)* n;
 }
 
 int Fibonacci_iterative(int n){
@@ -104,11 +111,16 @@ int Fibonacci_iterative(int n){
     num[0] = 0;
     num[1] = 1;
 
-
     for(int i = 2; i<=n; i++){
         num[i] = num[i-1] + num[i-2];
     }
 
     return num[n];
 
+}
+
+int Fibonacci_recursive(int n){
+    if(n == 0) return 0;
+    else if(n == 1) return 1;
+    return Fibonacci_recursive(n-1) + Fibonacci_recursive(n-2);
 }
