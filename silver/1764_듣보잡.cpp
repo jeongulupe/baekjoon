@@ -27,4 +27,5 @@ int main(){
         cout << vt[i] << "\n";
     }
 
+    return 0;
 }
